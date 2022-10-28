@@ -13,7 +13,7 @@ class UserTest < ActiveSupport::TestCase
 
     inbox1 = Inbox.create!(user_id: user.id, message_id: message1.id)
     inbox2 = Inbox.create!(user_id: user.id, message_id: message2.id)
-    # binding.pry
+
     assert_equal 2, user.inboxes.size
   end
 
